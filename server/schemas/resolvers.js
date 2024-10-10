@@ -9,12 +9,6 @@ const resolvers = {
             }
             throw AuthenticationError;
         },
-        fitness: async (parent, { fitnessId }) => {
-            return Fitness.findOne({ _id: fitnessId });
-        },
-        nutrition: async (parent, { nutritionId }) => {
-            return Nutrition.findOne({ _id: nutritionId });
-        },
     },
 
     Mutation: {
